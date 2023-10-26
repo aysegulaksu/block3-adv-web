@@ -1,0 +1,32 @@
+<?php 
+
+$phasesToTest = "ad a";
+
+//have 2 variables to keep track pf phases forward 
+
+$forwards = "";
+$backwards = "";
+
+//populate my 2 variables - use a loop
+
+//check for spaces
+
+//ignore or skip
+
+for ( $i = 0; $i < strlen ($phaseToTest); $i++) {
+    echo $phaseToTest [$i]; 
+    $forwards .=$phaseToTest [$i];
+    if ($phasesToTest[$i] == " " ){
+        //echo "skip";
+    } else {
+        $forwards .=$phaseToTest [$i];
+    }
+}
+echo $forwards;
+
+
+
+
+
+
+?>
