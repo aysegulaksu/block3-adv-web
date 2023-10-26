@@ -40,7 +40,7 @@ $catKisses->calculateKissesPerWeek();
 $catKisses->calculateKissesPerYear();
 
 // Display the results
-echo "<br>Kitty kisses for food per day: {$catKisses->kissesPerDay} kisses<br>";
+echo "<br>Kiss, Eat, Repeat: Finn Peek-A-Boo <br>Kitty kisses for food per day: {$catKisses->kissesPerDay} kisses<br>";
 echo "Kitty kisses for food per week: {$catKisses->kissesPerWeek} kisses<br>";
 echo "Kitty kisses for food per year: {$catKisses->kissesPerYear} kisses<br> <br> <br>";
 
