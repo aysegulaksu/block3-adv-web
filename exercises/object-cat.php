@@ -1,5 +1,6 @@
 <?php
 ini_set('display_errors', 1);
+echo "Peek-a-Boo Style: Kiss, Eat, Repeat"
 //create a class
 class KissForFood
 {
