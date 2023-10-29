@@ -40,18 +40,7 @@ public function isHappy() {
     return $this->happy;
 }
 
-$finnPeekaboo = new Cat();
+$finn = new Cat();
 
-$behaviours = []
-$behaviours []=$finnPeekaboo->giveKisses();
-$behaviours []=$finnPeekaboo->getsKisses();
-$behaviours []=$finnPeekaboo->play();
-//for ($i = 0; $i < count($behaviours); $i++) {
-    //echo $behaviours[$i] . "<br>";
-
-foreach ($behaviours as $behaviour) {
-    echo $behaviour . "<br>";
-    echo $finnPeekaboo->isHappy() . "<br>";
 }
-
 
