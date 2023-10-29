@@ -49,8 +49,8 @@ $behaviours []=$finnPeekaboo->play();
 
 foreach ($behaviours as $behaviour) {
     echo $behaviour . "<br>";
-    echo "is Finn Happy? " . $finnPeekaboo->isHappy() ? "Yes" : "No" . "<br>";
-    
+    echo "is Finn Happy? " . ($finnPeekaboo->isHappy() ? "Yes" : "No") . "<br>";
+
 }
 
 
