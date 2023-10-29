@@ -42,16 +42,15 @@ public function isHappy() {
 
 $finnPeekaboo = new Cat();
 
-$behaviours = []
+$behaviours = [];
 $behaviours []=$finnPeekaboo->giveKisses();
-$behaviours []=$finnPeekaboo->getsKisses();
+$behaviours []=$finnPeekaboo->giveKisses();
 $behaviours []=$finnPeekaboo->play();
-//for ($i = 0; $i < count($behaviours); $i++) {
-    //echo $behaviours[$i] . "<br>";
 
 foreach ($behaviours as $behaviour) {
     echo $behaviour . "<br>";
-    echo $finnPeekaboo->isHappy() . "<br>";
+    echo "is Finn Happy? " . $finnPeekaboo->isHappy() ? "Yes" : "No" . "<br>";
+    
 }
 
 
