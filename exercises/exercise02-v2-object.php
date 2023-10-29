@@ -33,11 +33,12 @@ public function giveKisses() {
 public function play () {
     $this->playfullnessLevel--;
     $this ->happy = true;
-    return "My cat is happy, and is not playful anymore" 
+    return "My cat is happy" ;
 }
 
 public function isHappy() {
     return $this->happy;
+}
 }
 
 $finnPeekaboo = new Cat();
@@ -52,5 +53,4 @@ foreach ($behaviours as $behaviour) {
     echo "is Finn Happy? " . ($finnPeekaboo->isHappy() ? "Yes" : "No") . "<br>";
 
 }
-
 
