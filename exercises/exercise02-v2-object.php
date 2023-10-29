@@ -22,16 +22,16 @@ public function giveKisses() {
     if ($this->isPlayfull()) {
      $this->playfullnessLevel++;
         $this ->happy = true;
-        return "My cat is happy , he is playful and he gives kisses ";
+        return "My cat gives kisses, he is playful and he is happy  ";
     }
 
     else { 
         $this ->happy = false;
-        return "My cat is not happy, and does not care anything"  ;
+        return "My cat is not playful, he is not happy"  ;
     }
 }
 public function play () {
-    $this->playfullnessLevel--;
+    $this->playfullnessLevel++;
     $this ->happy = true;
     return "My cat is happy" ;
 }
@@ -44,7 +44,6 @@ public function isHappy() {
 $finnPeekaboo = new Cat();
 
 $behaviours = [];
-$behaviours []=$finnPeekaboo->giveKisses();
 $behaviours []=$finnPeekaboo->giveKisses();
 $behaviours []=$finnPeekaboo->play();
 
