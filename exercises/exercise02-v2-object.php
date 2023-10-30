@@ -42,14 +42,26 @@ public function isHappy() {
 }
 
 $finnPeekaboo = new Cat();
-
-$behaviours = [];
-$behaviours []=$finnPeekaboo->giveKisses();
-$behaviours []=$finnPeekaboo->play();
-
-foreach ($behaviours as $behaviour) {
-    echo $behaviour . "<br>";
-    echo "is Finn Happy? " . ($finnPeekaboo->isHappy() ? "Yes" : "No") . "<br>";
-
+if ($finnPeekaboo->giveKisses() || $finnPeekaboo->play()) {
+    echo "Finn is happy.<br>";
+} else {
+    echo "Finn is not happy.<br>";
 }
+
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
