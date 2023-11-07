@@ -3,7 +3,7 @@ Block3-Advanced Web Programming
 
 -[Exercise folder: ] (https://github.com/aysegulaksu/block3-adv-web/tree/main/exercises)
 - [Exercise 03: Normalization
-]
+](https://github.com/aysegulaksu/block3-adv-web/blob/main/exercises/exercise03-normal-table.md)
 
 
 - [Exercise 02: cat: kiss, play, be happy](https://github.com/aysegulaksu/block3-adv-web/blob/main/exercises/exercise02-v2-object.php)
