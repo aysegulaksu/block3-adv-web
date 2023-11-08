@@ -7,7 +7,7 @@
 
 
 Table data: Book, Genre, Author, Author Nationality
-version 1- I feel like there had to be book id and author id as well in this table... 
+Version 1- I feel like there had to be book id and author id as well in this table... 
 
 |Book             | Genre         |
 |-----------------|---------------|
@@ -28,7 +28,7 @@ version 1- I feel like there had to be book id and author id as well in this tab
 |Journey to the.. |Jules Verne         |
 |Leaves of grass  | Walt Whitman       |
  
-version 2-  I like version 1 more, but i think this version may work as well.. 
+version 2-  After the second review, I have a feeling that Version2 is not correct approach.... 
 
 book is primary key - author is foreign key 
 |Book             | Genre         |Author        | 
@@ -82,24 +82,7 @@ State code and state are connected, so I will create another table.. feels like 
 
 Table data:NIN, contractNo, hoursPerWeek, eName, hotelNo, hotelLocation
 
-hotelNo is a primary key
-| hotelNo | hotelLocation |contractNo   | 
-| ------- | ------------- |-------------|
-|H25      |Edinburgh      |C1024        |
-|H4       |Glasgow        |C1025        |
-
-NIN is primary key ...
-I think hotelNo can be used as a foreign key in this table but I am not sure which practice would be better, creating a seperate table for NIN and hotelNo or using hotelNo in here as a foreign key.. Ok... I need more information on this.. 
-
-| NIN     | eName         |hoursPerWeek | hotelNo |
-| ------- | ------------- |-------------|---------|
-|113567WD |John Smith     |16           |C1024    |
-|234111XA |Diane Hocine   |24           |C1024    |
-|712670YD |Sarah White    |28           |C1025    |
-|113567WD |John Simith    |16           |C1025    |
-
-
-***** alternative approach ... in the case if I take of hotelNo- foreign key from the table above. 
+*********UPDATE: REVIEWING THE READING ON THE NORMALIZATION, IT SEEMS V1 IS A BETTER APPROACH
 
 hotelNo is a primary key
 | hotelNo | hotelLocation |contractNo   | 
@@ -123,6 +106,27 @@ NIN is a primary key
 |234111XA |Diane Hocine   |
 |712670YD |Sarah White    |
 |113567WD |John Simith    |
+
+
+-----
+This is the V2 and it seems not the best approach.. 
+
+hotelNo is a primary key
+| hotelNo | hotelLocation |contractNo   | 
+| ------- | ------------- |-------------|
+|H25      |Edinburgh      |C1024        |
+|H4       |Glasgow        |C1025        |
+
+ 
+
+| NIN     | eName         |hoursPerWeek | hotelNo |
+| ------- | ------------- |-------------|---------|
+|113567WD |John Smith     |16           |C1024    |
+|234111XA |Diane Hocine   |24           |C1024    |
+|712670YD |Sarah White    |28           |C1025    |
+|113567WD |John Simith    |16           |C1025    |
+
+
 
 
 ## Exercise Normalization 02: Patient Dental Appointmentn
