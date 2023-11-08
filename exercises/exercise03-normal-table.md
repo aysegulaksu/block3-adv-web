@@ -7,7 +7,8 @@
 
 
 Table data: Book, Genre, Author, Author Nationality
-version 1- 
+version 1- I feel like there had to be book id and author id as well in this table... 
+
 |Book             | Genre         |
 |-----------------|---------------|
 |Twenty thousands |Science-Fiction|
@@ -27,7 +28,7 @@ version 1-
 |Journey to the.. |Jules Verne         |
 |Leaves of grass  | Walt Whitman       |
  
-version 2-  I like version 2 more but not sure if this would be the correct approach... 
+version 2-  I like version 1 more, but i think this version may work as well.. 
 
 book is primary key - author is foreign key 
 |Book             | Genre         |Author        | 
@@ -88,7 +89,7 @@ hotelNo is a primary key
 |H4       |Glasgow        |C1025        |
 
 NIN is primary key ...
-I think hotelNo can be used as a foreign key in this table but I am not sure which practice would be better, creating a seperate table for NIN and hotelNo or using hotelNo in here as a foreign key.. 
+I think hotelNo can be used as a foreign key in this table but I am not sure which practice would be better, creating a seperate table for NIN and hotelNo or using hotelNo in here as a foreign key.. Ok... I need more information on this.. 
 
 | NIN     | eName         |hoursPerWeek | hotelNo |
 | ------- | ------------- |-------------|---------|
