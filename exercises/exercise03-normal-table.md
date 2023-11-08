@@ -3,7 +3,55 @@
 | Header    | Title       |
 | Paragraph | Text        |
 
+## Exercise Normalization 05:Book Table 
+
+Table data: Book, Genre, Author, Author Nationality
+
+|Book             | Genre         |Author        | 
+|-----------------|---------------|--------------| 
+|Twenty thousands |Science-Fiction|Jules Verne   |
+|Journey to the.. |Science-Fiction|Jules Verne   |
+|Leaves of grass  |Poetry         |Walt Whitman  |
+
+|Author           | Author Nationality |        
+|-----------------|--------------------|
+|Jules Verne      |French              |
+|Walt Whitman     |American            |
+|Leo Tolstoy      |Russian             |
+
+
 ## Exercise Normalization 04: Another Emnployee Table
+
+Table data: EMPLOYEE_ID, NAME, JOB_CODE, JOB, STATE_CODE, HOME_STATE
+
+EMPLOYEE_ID is primary key
+
+|EMPLOYEE_ID | NAME     |STATE_CODE | 
+|------------|----------|-----------| 
+| E001       | ALICE    |26         |
+| E002       | BOB      |56         |
+| E003       | ALICE    |56         |
+
+|JOB_CODE    | JOB      |
+|------------|----------|
+| J01        | CHEF     |
+| J02        | WAITER   |
+| J03        |BARTENDER |
+
+|EMPLOYEE_ID | JOB_CODE |
+|------------|----------|
+| E001       | J01      |
+| E001       | J02      |
+| E002       | J02      |
+| E002       | J03      |
+| E003       | J01      |
+
+
+State code and state are connected, so I will create another table.. feels like makes sense.. 
+|STATE_CODE  |HOME_STATE |
+|------------|-----------|
+| 26         | MICHIGAN  |
+| 56         | WYOMING   |
 
 
 ## Exercise Normalization 03: Employees of InstantCover and their contracts to work at hotels 
@@ -27,7 +75,23 @@ I think hotelNo can be used as a foreign key in this table but I am not sure whi
 |113567WD |John Simith    |16           |C1025    |
 
 
-***** alternative approach ... in the case if I take of hotelNo- foreign key from the table above
+***** alternative approach ... in the case if I take of hotelNo- foreign key from the table above. 
+
+hotelNo is a primary key
+| hotelNo | hotelLocation |contractNo   | 
+| ------- | ------------- |-------------|
+|H25      |Edinburgh      |C1024        |
+|H4       |Glasgow        |C1025        |
+
+
+NIN is a primary key 
+| NIN     | eName         |hoursPerWeek |
+| ------- | ------------- |-------------|
+|113567WD |John Smith     |16           |
+|234111XA |Diane Hocine   |24           |
+|712670YD |Sarah White    |28           |
+|113567WD |John Simith    |16           |
+
 
 | NIN     | hotelNo       |
 | ------- | ------------- |
