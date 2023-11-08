@@ -1,4 +1,5 @@
 <?php
+
 // Define function :isPalindrome and check if the sentence is palindrome
 function isPalindrome($sentence) {
     // Convert sentence to lowercase - and make this is a case-insensitive comparison

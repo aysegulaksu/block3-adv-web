@@ -1,5 +1,5 @@
 <?php 
-
+ 
 //the hungry and kiss example does not feel right... I would do the same example with wants to play
 
 //set the class and define playfullness level- that makes more sense
