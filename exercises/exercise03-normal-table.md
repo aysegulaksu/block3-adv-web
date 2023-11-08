@@ -3,11 +3,41 @@
 | Header    | Title       |
 | Paragraph | Text        |
 
-## Exercise Normalization : Employees of InstantCover and their contracts to work at hotels
+## Exercise Normalization 04: Another Emnployee Table
+
+
+## Exercise Normalization 03: Employees of InstantCover and their contracts to work at hotels 
 
 Table data:NIN, contractNo, hoursPerWeek, eName, hotelNo, hotelLocation
 
-## Exercise Normalization : Patient Dental Appointment
+hotelNo is a primary key
+| hotelNo | hotelLocation |contractNo   | 
+| ------- | ------------- |-------------|
+|H25      |Edinburgh      |C1024        |
+|H4       |Glasgow        |C1025        |
+
+NIN is primary key ...
+I think hotelNo can be used as a foreign key in this table but I am not sure which practice would be better, creating a seperate table for NIN and hotelNo or using hotelNo in here as a foreign key.. 
+
+| NIN     | eName         |hoursPerWeek | hotelNo |
+| ------- | ------------- |-------------|---------|
+|113567WD |John Smith     |16           |C1024    |
+|234111XA |Diane Hocine   |24           |C1024    |
+|712670YD |Sarah White    |28           |C1025    |
+|113567WD |John Simith    |16           |C1025    |
+
+
+***** alternative approach ... in the case if I take of hotelNo- foreign key from the table above
+
+| NIN     | hotelNo       |
+| ------- | ------------- |
+|113567WD |John Smith     |
+|234111XA |Diane Hocine   |
+|712670YD |Sarah White    |
+|113567WD |John Simith    |
+
+
+## Exercise Normalization 02: Patient Dental Appointmentn
 
 Table data: staffNo, dentistName, patientNo, patientName, appointment (date - time ), surgeryNo
 
@@ -41,7 +71,7 @@ S1032  | P110     | 15 Oct 03   18.00  |S13      |
 
 
 
-## Exercise Normalization 
+## Exercise Normalization 01
 [A table with the students and their grades in different topics.- Link](http://www.gitta.info/LogicModelin/en/html/DataConsiten_selfAssessment5.html)
 
 Table data: UnitID, StudentID, Date, TutorID, Topic, Room, Grade, Book,TutEmail
