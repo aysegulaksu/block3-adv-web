@@ -5,8 +5,31 @@
 
 ## Exercise Normalization 05:Book Table 
 
-Table data: Book, Genre, Author, Author Nationality
 
+Table data: Book, Genre, Author, Author Nationality
+version 1- 
+|Book             | Genre         |
+|-----------------|---------------|
+|Twenty thousands |Science-Fiction|
+|Journey to the.. |Science-Fiction|
+|Leaves of grass  |Poetry         |
+
+|Author           | Author Nationality |        
+|-----------------|--------------------|
+|Jules Verne      |French              |
+|Walt Whitman     |American            |
+|Leo Tolstoy      |Russian             |
+
+
+|Book             | Author             |        
+|-----------------|--------------------|
+|Twenty thousands |Jules Verne         |
+|Journey to the.. |Jules Verne         |
+|Leaves of grass  | Walt Whitman       |
+ 
+version 2-  I like version 2 more but not sure if this would be the correct approach... 
+
+book is primary key - author is foreign key 
 |Book             | Genre         |Author        | 
 |-----------------|---------------|--------------| 
 |Twenty thousands |Science-Fiction|Jules Verne   |
@@ -142,7 +165,9 @@ Table data: UnitID, StudentID, Date, TutorID, Topic, Room, Grade, Book,TutEmail
 
 Student ID is primary key
 
-| SudentID    | 
+I feel like there shoudl have been a student name column... 
+
+| SudentID    |
 | ----------  | 
 | St1         | 
 | St2         |
