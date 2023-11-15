@@ -1,0 +1,23 @@
+@startuml
+scale 3
+
+class Animal {
+  +makeSound()
+}
+
+class Cat extends Animal {
+  +makeSound()
+  +bark()
+}
+
+
+class Vehicle {
+  +drive()
+}
+
+class Car extends Vehicle {
+  +drive()
+  +repairCar()
+}
+
+@enduml
