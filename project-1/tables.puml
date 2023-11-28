@@ -1,0 +1,43 @@
+
+@startuml
+
+abstract classPetProduct {
+  -name
+  -type
+  -category
+  -brand
+  -price
+  -tax
+
+  __construct()
+  +getName()
+  +getType()
+  +getCategory()
+  +getBrand()
+  +getPrice()
+  +getTax()
+  
+  abstract calculateTax()
+  abstract calculateSalePrice()
+}
+
+class PetFood extends PetProduct {
+
+  -expiration
+__construct()
++getExpiration ()
+ abstract calculateExpiration();
+ abstract calculateTax();
+ abstract calculateSalePrice();
+}
+
+class PetToys extends PetProduct {
+  
+    __construct()
+ abstract calculateTax();
+ abstract calculateSalePrice();
+
+}
+
+
+@enduml
