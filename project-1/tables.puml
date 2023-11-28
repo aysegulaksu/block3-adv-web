@@ -5,7 +5,6 @@ abstract classPetProduct {
   -name
   -type
   -category
-  -brand
   -price
   -tax
 
@@ -13,7 +12,6 @@ abstract classPetProduct {
   +getName()
   +getType()
   +getCategory()
-  +getBrand()
   +getPrice()
   +getTax()
   
@@ -32,7 +30,6 @@ __construct()
 }
 
 class PetToys extends PetProduct {
-  
     __construct()
  abstract calculateTax();
  abstract calculateSalePrice();
