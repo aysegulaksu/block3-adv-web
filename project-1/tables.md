@@ -17,7 +17,7 @@
 
 # PetProduct Table
 
-| ProductID      | Name          | Type_id (FK) |Category_id(FK)  | 
+| ProductID (PK) | Name          | Type_id (FK) |Category_id(FK)  | 
 | -------------- | --------------| -------------| --------------- | 
 | 01             |  ab           |              |                 |      
 

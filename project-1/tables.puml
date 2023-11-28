@@ -1,40 +1,38 @@
-
 @startuml
 
-abstract classPetProduct {
-  -name
-  -type
-  -category
-  -price
-  -tax
+abstract class PetProduct {
+  - name
+  - type
+  - category
+  - price
+  - tax
 
-  __construct()
-  +getName()
-  +getType()
-  +getCategory()
-  +getPrice()
-  +getTax()
+  + __construct()
+  + getName()
+  + getType()
+  + getCategory()
+  + getPrice()
+  + getTax()
   
   abstract calculateTax()
   abstract calculateSalePrice()
 }
 
 class PetFood extends PetProduct {
+  - expiration
 
-  -expiration
-__construct()
-+getExpiration ()
- abstract calculateExpiration();
- abstract calculateTax();
- abstract calculateSalePrice();
+  + __construct()
+  + getExpiration()
+  + calculateExpiration()
+  + calculateTax()
+  + calculateSalePrice()
 }
 
 class PetToys extends PetProduct {
-    __construct()
- abstract calculateTax();
- abstract calculateSalePrice();
-
+  + __construct()
+  + calculateTax()
+  + calculateSalePrice()
 }
 
-
 @enduml
+
