@@ -1,4 +1,8 @@
-This pet boutique does not sell animals due to their commitment to animal rights. Furthermore, they are based in Montreal. Montreal, Quebec banned the sale of dogs, cats and rabbits in pet stores in 2020. 
+I could not understand exactly what you wanted us to do in the instructions, so I did something basic based on my understanding of the instructions.
+
+This fictional pet boutique does not sell animals due to its commitment to animal rights. Furthermore, it is based in Montreal. Montreal, Quebec, banned the sale of dogs, cats, and rabbits in pet stores in 2020.
+
+Instead of creating categories for cats and dogs to classify products, I used petfood and pettoy because profit margins, product turnover rate, etc., are more related to these in the pet industry. If you would like me to expand the tables, I can create accessories and include toys, beds, etc. or I can add types for food such as wet, dry, dehydrated, or for toys, puzzle, games, etc.
 
 # Type
 | TypeID (PK)        | Type          | 
@@ -12,8 +16,8 @@ This pet boutique does not sell animals due to their commitment to animal rights
 |--------------------|---------------|---------------|
 | 1                  |cat food.      |.              |
 | 2                  |dog food.      |.              |
-| 3                  |cat toys.      |.              |
-|4                   |dog toys.      |.              |
+| 3                  |cat toy.      |.              |
+|4                   |dog toy.      |.              |
 
 # PetProduct Table
 

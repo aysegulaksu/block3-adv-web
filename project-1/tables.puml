@@ -28,7 +28,7 @@ class PetFood extends PetProduct {
   + calculateSalePrice()
 }
 
-class PetToys extends PetProduct {
+class PetToy extends PetProduct {
   + __construct()
   + calculateTax()
   + calculateSalePrice()
