@@ -1,4 +1,4 @@
-
+This pet boutique does not sell animals due to their commitment to animal rights. Furthermore, they are based in Montreal. Montreal, Quebec banned the sale of dogs, cats and rabbits in pet stores in 2020. 
 
 # Type
 | TypeID (PK)        | Type          | 
