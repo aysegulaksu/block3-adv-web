@@ -3,6 +3,7 @@ I could not understand exactly what you wanted us to do in the instructions, so 
 This fictional pet boutique does not sell animals due to its commitment to animal rights. Furthermore, it is based in Montreal. Montreal, Quebec, banned the sale of dogs, cats, and rabbits in pet stores in 2020.
 
 Instead of creating categories for cats and dogs to classify products, I used petfood and pettoy because profit margins, product turnover rate, etc., are more related to these in the pet industry. If you would like me to expand the tables, I can create accessories and include toys, beds, etc. or I can add types for food such as wet, dry, dehydrated, or for toys, puzzle, games, etc.
+# PET PRODUCTS TABLE
 
 # Type
 | TypeID (PK)        | Type          | 
@@ -33,13 +34,13 @@ Instead of creating categories for cats and dogs to classify products, I used pe
 | ------------------ | ----- | --- |
 |                    |       |     |
 
-# PetFood Table
+# PetFood  - Category-ID -01 Table
 
 | ProductID          | Expiration |
 | ------------------ | ---------- |
 |                    |            |
 
-# PetToys Table
+# PetToys Table Category-ID -02 Table
 
 | ProductID          |
 | ------------------ |
