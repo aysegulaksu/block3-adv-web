@@ -34,15 +34,15 @@ Instead of creating categories for cats and dogs to classify products, I used pe
 | ------------------ | ----- | --- |
 |                    |       |     |
 
-# PetFood  - Category-ID -01 Table
+# PetFood  -Type-ID -01 Table
 
 | ProductID          | Expiration |
 | ------------------ | ---------- |
 |                    |            |
 
-# PetToys Table Category-ID -02 Table
+# PetToys Table Type-ID -02 Table
 
-| ProductID          |
-| ------------------ |
-|                    |
+| ProductID          |Size     |
+| ------------------ |---------|
+|                    |.         |
 
