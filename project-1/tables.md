@@ -30,13 +30,13 @@ I updated the table based on your feedback, I hope that is better now
 |----------------|------|--------------|-----------------|----------|
 | 01             | ab   |              |                 |          |
 # Pricing Table
-| ProductID | Cost | Profit Margin | Price | Tax |
-|-----------|------|---------------|-------|-----|
-|           |      |               |       |     |
+| ProductID | Cost | Type_id           | Price | Tax |
+|-----------|------|-------------------|-------|-----|
+|           |      |                   |       |     |
 # PetFood Table (Type-ID - 01)
 | ProductID | Expiration | Number of Item | Date Added |
 |-----------|------------|-----------------|-----------|
-|           |            |                 |            |
+|           |            |                 |           |
 # PetToys Table (Type-ID - 02)
 
 | ProductID | Number of Item | Date Added |
@@ -44,7 +44,7 @@ I updated the table based on your feedback, I hope that is better now
 |           |                 |            |
 
 # Inventory Table
-| TypeID (FK) | CategoryID (FK) | ProductID (FK) | Inventory | 
+| TypeID (FK) | CategoryID (FK) | ProductID (FK) | Inventory  |
 |-------------|------------------|-----------------|--------  |
 |             |                  |                 |          |
 

@@ -22,7 +22,6 @@ abstract class PetProduct {
   + getProfitMargin()
   abstract calculatePrice()
   abstract calculateTax()
-  abstract calculateSalePrice()
 }
 
 class PetFood extends PetProduct {
@@ -35,9 +34,8 @@ class PetFood extends PetProduct {
   + calculateExpiration()
   + abstract calculatePrice()
   + calculateTax()
-  + calculateSalePrice()
   + calculateProfit()
-  + calculateInventory()
+  + addNumberofItem()
   + calculateShelfTime()
 }
 
@@ -48,9 +46,8 @@ class PetToy extends PetProduct {
   + __construct()
   + abstract calculatePrice()
   + calculateTax()
-  + calculateSalePrice()
   + calculateProfit()
-  + calculateInventory()
+  + addNumberofItem()
   + calculateShelfTime()
 }
 
@@ -61,12 +58,14 @@ class PetToy extends PetProduct {
 class Inventory {
   - ProductId
   - ProductType
-
   + __construct()
   + getProductId()
   + getProductType()
   +getProductCategory
+  +getNumberofItem
   + updateInventory()
+  +calculateAvaregeShelfTime
+  +calculateCost()
 }
 @enduml
 
