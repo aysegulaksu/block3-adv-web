@@ -33,6 +33,9 @@ class PetFood extends PetProduct {
   +abstractcalculatePrice()
   + calculateTax()
   + calculateSalePrice()
+  + calculateProfit
+  +calculateInventory
+  +calculateShelfTime
 }
 
 class PetToy extends PetProduct {
@@ -41,6 +44,9 @@ class PetToy extends PetProduct {
   +abstractcalculatePrice()
   + calculateTax()
   + calculateSalePrice()
+  + calculateProfit
+  +calculateInventory
+  +calculateShelfTime
 }
 
 @enduml
