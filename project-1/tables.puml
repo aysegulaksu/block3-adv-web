@@ -18,6 +18,8 @@ abstract class PetProduct {
   + getTax()
   +getBrand
   +getCost
+  +getProfitMargin
+  abstractcalculatePrice()
   abstract calculateTax()
   abstract calculateSalePrice()
 }
@@ -28,6 +30,7 @@ class PetFood extends PetProduct {
   + __construct()
   + getExpiration()
   + calculateExpiration()
+  +abstractcalculatePrice()
   + calculateTax()
   + calculateSalePrice()
 }
@@ -35,6 +38,7 @@ class PetFood extends PetProduct {
 class PetToy extends PetProduct {
 
   + __construct()
+  +abstractcalculatePrice()
   + calculateTax()
   + calculateSalePrice()
 }
