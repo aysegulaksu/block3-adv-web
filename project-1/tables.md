@@ -1,54 +1,51 @@
-I could not understand exactly what you wanted us to do in the instructions, so I did something basic based on my understanding of the instructions.
-
-This fictional pet boutique does not sell animals due to its commitment to animal rights and belives that adoptions should be carried by the organizations that can select correct pet parents for the correct pets. Furthermore, this store is based in Montreal. Montreal, Quebec, banned the sale of dogs, cats, and rabbits in pet stores in 2020.
-
-Instead of creating categories for cats and dogs to classify products, I used petfood and pettoy because profit margins, product turnover rate, etc., are more related to these in the pet industry. If you would like me to expand the tables, I can create accessories and include toys, beds, etc. or I can add types for food such as wet, dry, dehydrated, or for toys, puzzle, games, etc.
+I updated the table based on your feedback, I hope that is better now
 
 # PET PRODUCTS TABLE
 
-# Type
-| TypeID (PK)        | Type          | Profit Margin
-| ------------------ | --------------|---------------|
-| 1                  | PetFood       |  35%.         |
-| 2                  | PetToys       | 50%.          |
+# Type Table
 
+| TypeID (PK) | Type    | Profit Margin |
+|-------------|---------|---------------|
+| 1           | PetFood | 35%           |
+| 2           | PetToys | 50%           |
 
-# Category 
-|CategoryID (PK)     |Category.      |   Type_Id (FK)|
-|--------------------|---------------|---------------|
-| 1                  |cat food.      |.              |
-| 2                  |dog food.      |.              |
-| 3                  |cat toy.      |.              |
-|4                   |dog toy.      |.              |
+# Category Table
+
+| CategoryID (PK) | Category | Type_Id (FK) |
+|-----------------|----------|--------------|
+| 1               | cat food | 1            |
+| 2               | dog food | 1            |
+| 3               | cat toy  | 2            |
+| 4               | dog toy  | 2            |
 
 # Brand Table
-|#Brand ID    |.  Brand |
-|-------------|---------|
+
+| Brand ID | Brand |
+|----------|-------|
+|          |       |
 
 # PetProduct Table
 
-| ProductID (PK) | Name          | Type_id (FK) |Category_id(FK)  | Brand ID
-| -------------- | --------------| -------------| --------------- | ----------|
-| 01             |  ab           |              |                 |           |
-
-
-
-
+| ProductID (PK) | Name | Type_id (FK) | Category_id(FK) | Brand ID |
+|----------------|------|--------------|-----------------|----------|
+| 01             | ab   |              |                 |          |
 # Pricing Table
+| ProductID | Cost | Profit Margin | Price | Tax |
+|-----------|------|---------------|-------|-----|
+|           |      |               |       |     |
+# PetFood Table (Type-ID - 01)
+| ProductID | Expiration | Number of Item | Date Added |
+|-----------|------------|-----------------|-----------|
+|           |            |                 |            |
+# PetToys Table (Type-ID - 02)
 
-| ProductID          |Cost   | Profit Margin | Price | Tax | Sale Price |
-| ------------------ | ----- | --------------|-------|------------------|
-|                    |       |               |.      |.    |            |
+| ProductID | Number of Item | Date Added |
+|-----------|-----------------|------------|
+|           |                 |            |
 
-# PetFood  -Type-ID -01 Table.    ( I did not create seperate size table with id, because that is not possible classify really, grs, changes so often and it is not standard always. instead i see size as part of name.. I owmed a pet boutique and services, so that is based on my experience.. )
+# Inventory Table
+| TypeID (FK) | CategoryID (FK) | ProductID (FK) | Inventory | 
+|-------------|------------------|-----------------|--------  |
+|             |                  |                 |          |
 
-| ProductID          | Expiration |Number of Item| Date Added |Total Num Inventory. |
-| ------------------ | ---------- |--------------|------------|---------------------|
-|                    |            |.             |            |
-
-# PetToys Table Type-ID -02 Table.   ( toy size classifications changes based on toy type and company from numbers to s, m,l or letter codes, grs etc.It is not managable with creating size, instead i see that as part of name)
-
-| ProductID          |Number of Item |Date Added     |Total Num Inventory |
-| ------------------ |---------------|---------------|--------------------|
-|                    |               |.              |                    |
 
