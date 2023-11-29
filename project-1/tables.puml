@@ -7,6 +7,8 @@ abstract class PetProduct {
   - price
   - tax
   -brand
+  -cost
+  -profitMargin
 
   + __construct()
   + getName()
@@ -14,7 +16,8 @@ abstract class PetProduct {
   + getCategory()
   + getPrice()
   + getTax()
-  
+  +getBrand
+  +getCost
   abstract calculateTax()
   abstract calculateSalePrice()
 }

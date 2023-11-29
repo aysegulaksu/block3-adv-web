@@ -6,10 +6,10 @@ Instead of creating categories for cats and dogs to classify products, I used pe
 # PET PRODUCTS TABLE
 
 # Type
-| TypeID (PK)        | Type          | 
-| ------------------ | --------------|
-| 1                  | PetFood       |  
-| 2                  | PetToys       | 
+| TypeID (PK)        | Type          | Profit Margin
+| ------------------ | --------------|---------------|
+| 1                  | PetFood       |  35%.         |
+| 2                  | PetToys       | 50%.          |
 
 
 # Category 
