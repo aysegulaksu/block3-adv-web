@@ -44,5 +44,5 @@ Instead of creating categories for cats and dogs to classify products, I used pe
 
 | ProductID          |Size     |
 | ------------------ |---------|
-|                    |.         |
+|                    |.        |
 
