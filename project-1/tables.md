@@ -35,9 +35,9 @@ Instead of creating categories for cats and dogs to classify products, I used pe
 
 # Pricing Table
 
-| ProductID          | Price | Tax |
-| ------------------ | ----- | --- |
-|                    |       |     |
+| ProductID          |Cost   | Profit Margin | Price | Tax | Sale Price |
+| ------------------ | ----- | --------------|-------|------------------|
+|                    |       |               |.      |.    |            |
 
 # PetFood  -Type-ID -01 Table.    ( I did not create seperate size table with id, because that is not possible classify really, grs, changes so often and it is not standard always. instead i see size as part of name.. I owmed a pet boutique and services, so that is based on my experience.. )
 
