@@ -6,6 +6,7 @@ abstract class PetProduct {
   - category
   - price
   - tax
+  -brand
 
   + __construct()
   + getName()
@@ -29,7 +30,7 @@ class PetFood extends PetProduct {
 }
 
 class PetToy extends PetProduct {
-  - size
+
   + __construct()
   + calculateTax()
   + calculateSalePrice()

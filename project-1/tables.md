@@ -20,11 +20,16 @@ Instead of creating categories for cats and dogs to classify products, I used pe
 | 3                  |cat toy.      |.              |
 |4                   |dog toy.      |.              |
 
+# Brand Table
+|#Brand ID    |.  Brand |
+|-------------|---------|
+
 # PetProduct Table
 
-| ProductID (PK) | Name          | Type_id (FK) |Category_id(FK)  | 
-| -------------- | --------------| -------------| --------------- | 
-| 01             |  ab           |              |                 |      
+| ProductID (PK) | Name          | Type_id (FK) |Category_id(FK)  | Brand ID
+| -------------- | --------------| -------------| --------------- | ----------|
+| 01             |  ab           |              |                 |           |
+
 
 
 
@@ -34,15 +39,15 @@ Instead of creating categories for cats and dogs to classify products, I used pe
 | ------------------ | ----- | --- |
 |                    |       |     |
 
-# PetFood  -Type-ID -01 Table
+# PetFood  -Type-ID -01 Table.    ( I did not create seperate size table with id, because that is not possible classify really, grs, changes so often and it is not standard always. instead i see size as part of name.. )
 
 | ProductID          | Expiration |
 | ------------------ | ---------- |
 |                    |            |
 
-# PetToys Table Type-ID -02 Table
+# PetToys Table Type-ID -02 Table.   ( toy size classifications changes based on toy type and company from numbers to s, m,l or letter codes, grs etc.It is not managable with creating size, instead i see that as part of name)
 
-| ProductID          |Size     |
-| ------------------ |---------|
-|                    |.        |
+| ProductID          |
+| ------------------ |
+|                    |
 
