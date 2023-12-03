@@ -26,13 +26,13 @@ I updated the table based on your feedback, I hope that is better now
 
 # PetProduct Table
 
-| ProductID (PK) | Name | Type_id (FK) | Category_id(FK) | Brand ID |
-|----------------|------|--------------|-----------------|----------|
-| 01             | ab   |              |                 |          |
+| ProductID (PK) | Name | Category_id(FK) | Brand ID (FK)|
+|----------------|------|-----------------|----------|
+| 01             | ab   |                 |          |
 # Pricing Table
-| ProductID | Cost | Type_id           | Price | Tax |
-|-----------|------|-------------------|-------|-----|
-|           |      |                   |       |     |
+| PricingID | ProductID |     cost   | Price | Tax |
+|-----------|------     |------------------- |-------|
+|           |            |           |       |       |
 # PetFood Table (Type-ID - 01)
 | ProductID | Expiration | Number of Item | Date Added |
 |-----------|------------|-----------------|-----------|
