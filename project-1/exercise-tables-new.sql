@@ -137,3 +137,15 @@ ALTER TABLE `inventory`
 COMMIT;
 
 
+----
+ALTER TABLE `inventory` ADD CONSTRAINT `productID` FOREIGN KEY (`productID`) REFERENCES `petProduct`(`productID`) ON DELETE RESTRICT ON UPDATE RESTRICT;
+
+
+INSERT INTO `petProduct` (`productID`, `productName`, `typeID`, `categoryID`, `brandID`, `qnty`, `cost`, `price`) VALUES (NULL, 'Raw beef blend 5.6kg', '1', '2', '2', '2', '178', '250'), (NULL, 'Go fish puzzle feeder', '2', '1', '3', '2', '30', '60');
+
+SELECT * FROM petProduct NATURAL JOIN productCategory WHERE productCategory.categoryID = petProduct.categoryID;
+
+
+SELECT * FROM petProduct JOIN productType ON petProduct.typeID = productType.typeID;
+
+SELECT * FROM petProduct NATURAL JOIN inventory WHERE inventory.productID = petProduct.productID;
