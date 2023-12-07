@@ -68,3 +68,5 @@ UPDATE `petProduct` SET `productName` = 'Ball', `brandID` = '4', `categoryID` = 
 SELECT * FROM `petProduct` JOIN productType WHERE 1;
 
 SELECT * FROM `inventory` JOIN productPricing WHERE 1;
+
+
