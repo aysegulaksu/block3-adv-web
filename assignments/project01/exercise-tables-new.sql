@@ -149,3 +149,14 @@ SELECT * FROM petProduct NATURAL JOIN productCategory WHERE productCategory.cate
 SELECT * FROM petProduct JOIN productType ON petProduct.typeID = productType.typeID;
 
 SELECT * FROM petProduct NATURAL JOIN inventory WHERE inventory.productID = petProduct.productID;
+
+
+ALTER TABLE `petFoodSpesifics` ADD FOREIGN KEY (`productID`) REFERENCES `petProduct`(`productID`) ON DELETE RESTRICT ON UPDATE RESTRICT;
+
+
+
+ALTER TABLE `petToySize` ADD  FOREIGN KEY (`productID`) REFERENCES `petProduct`(`productID`) ON DELETE RESTRICT ON UPDATE RESTRICT;
+MySQL said: Documentation
+----
+------Still having the same problem..cannot use the foreign key more then once
+#1452 - Cannot add or update a child row: a foreign key constraint fails (`aysegul90`.`#sql-26d6a9_245de`, CONSTRAINT `#sql-26d6a9_245de_ibfk_1` FOREIGN KEY (`productID`) REFERENCES `petProduct` (`productID`))

@@ -2,38 +2,37 @@ I updated the table based on your feedback, I hope that is better now
 
 # PET PRODUCTS TABLE
 
-# Type Table
+# productType Table
 
-| TypeID (PK) | Type    | Profit Margin |
-|-------------|---------|---------------|
-| 1           | PetFood | 35%           |
-| 2           | PetToys | 50%           |
+| typeID (PK) | type    |
+|-------------|---------|
+| 1           | PetFood | 
+| 2           | PetToys |
 
-# Category Table
+# productCategory Table
 
-| CategoryID (PK) | Category | Type_Id (FK) |
-|-----------------|----------|--------------|
-| 1               | cat food | 1            |
-| 2               | dog food | 1            |
-| 3               | cat toy  | 2            |
-| 4               | dog toy  | 2            |
+| categoryID (PK) | category | 
+|-----------------|----------|
+| 1               | cat      | 
+| 2               | dog      |
+
 
 # Brand Table
 
-| Brand ID | Brand |
-|----------|-------|
-|          |       |
+| brandID (PK) | brand |
+|--------------|-------|
+|              |       |
 
-# PetProduct Table
+# petProduct Table
 
-| ProductID (PK) | Name | Category_id(FK) | Brand ID (FK)|
-|----------------|------|-----------------|----------|
-| 01             | ab   |                 |          |
+| productID (PK) | productName |  typeID (FK)   |categoryID(FK)|brandID (FK) |
+|----------------|-------------|----------------|--------------|-------------|
+| 01             | ab          |                |              |             |
 # Pricing Table
 | PricingID | ProductID |     cost   | Price | Tax |
 |-----------|------     |------------------- |-------|
 |           |            |           |       |       |
-# PetFood Table (Type-ID - 01)
+# petFoodSpesifics Table 
 | ProductID | Expiration | Number of Item | Date Added |
 |-----------|------------|-----------------|-----------|
 |           |            |                 |           |
