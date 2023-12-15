@@ -3,34 +3,40 @@
 Type --|> Product
 Category --|> Product
 Brand --|> Product
-Category --|> Product
+ Price --|> Product 
 PetFoodExpiration --|> Product
 PetToySize --|> Product
 
 abstract class Product {
-  -product_id
-  -product_type
-  -brand_id
-  -price
-  construct()
-  addTax()
-  calculateSalePrice()
+  -productID
+  -name
+  -typeID
+  -categoryID
+  -brandID
+  -pricingID
 }
 
 class Type {
-  type_id
+  typeID
   type
 }
 
 class Category {
-  -category_id
+  -categoryID
   -category
 }
 
 class Brand {
-  -brand_id
+  -brandID
   -name
 }
+class Price {
+  -pricingID
+  -price
+  construct()
+  addTax()
+  calculateSalePrice()
+  }
 
 class PetFoodExpiration {
   -expiration_id

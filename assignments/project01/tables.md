@@ -20,13 +20,14 @@ I updated the table based on your feedback, I hope that is better now
 |--------------|-------|
 |              |       |
 
+
 # petProduct Table
-| productID (PK) | productName |  typeID (FK)   |categoryID(FK)|brandID (FK) |price |
-|----------------|-------------|----------------|--------------|-------------|------|
-|                |             |                |              |             |      |
+| productID (PK) | productName |  typeID (FK)   |categoryID(FK)|brandID (FK) |
+|----------------|-------------|----------------|--------------|-------------|
+|                |             |                |              |             |  
 
 # petFoodExpiration Table 
-| expirationID (PK) | expirationdate | productID (FK) |
+| expirationID (PK) | expirationDate | productID (FK) |
 |-------------------|----------------|----------------|
 |                   |                |                |
 
@@ -35,6 +36,8 @@ I updated the table based on your feedback, I hope that is better now
 |SizeID (PK)|Size             | productID (FK) |
 |-----------|-----------------|----------------|
 |           |                 |                |
+
+
 
 
 
