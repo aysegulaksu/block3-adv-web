@@ -1,57 +1,45 @@
 
 @startuml
-
-Pet extends to Product
+Type --|> Product
 Category --|> Product
 Brand --|> Product
-Pricing --|> Product
-Tax --|> Product
-ProductCategory --|> Product
+Category --|> Product
+PetFoodExpiration --|> Product
+PetToySize --|> Product
 
 abstract class Product {
-  -product_id: int
-  -product_type: string
-  -brand_id: int
-  -pricing_id: int
-  __construct()
-  +calculateTax(): double
-  +getSalePrice(): double
+  -product_id
+  -product_type
+  -brand_id
+  -price
+  construct()
+  addTax()
+  calculateSalePrice()
 }
 
-class Pet {
-  -pet_id: int
-  -pet: string
+class Type {
+  type_id
+  type
 }
 
 class Category {
-  -category_id: int
-  -category: string
+  -category_id
+  -category
 }
 
 class Brand {
-  -brand_id: int
-  -name: string
+  -brand_id
+  -name
 }
 
-class Pricing {
-  -pricing_id: int
-  -purchase_price: double
-  -sale_price: double
-  __construct()
-  +getPurchasePrice(): double
-  +getSalePrice(): double
+class PetFoodExpiration {
+  -expiration_id
+  -expirationdate
 }
 
-class Tax {
-  -tax_id: int
-  -qst_rate: double
-  -gst_rate: double
+class PetToySize {
+  -size_id
+  -size
 }
-
-class ProductCategory {
-  -product_id: int
-  -category_id: int
-}
-
 
 @enduml
