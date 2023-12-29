@@ -8,7 +8,7 @@ class ProductBrandController {
     }
 
     public function insertBrand($brand) {
-        // Check if the brand already exists --compare string case-lower case-uppercase
+        // Check if the brand already exists
         $existingBrands = $this->model->getAllBrands();
         foreach ($existingBrands as $existingBrand) {
             if (strcasecmp($existingBrand['brand'], $brand) === 0) {
@@ -16,12 +16,17 @@ class ProductBrandController {
             }
         }
 
-        // Brand does not exist, proceed with insertion
+        // Brand does not exist, insert brand
         return $this->model->insertBrand($brand);
     }
 
     public function getAllBrands() {
         return $this->model->getAllBrands();
     }
+
+    public function deleteBrand($brandID) {
+        return $this->model->deleteBrand($brandID);
+    }
 }
 ?>
+

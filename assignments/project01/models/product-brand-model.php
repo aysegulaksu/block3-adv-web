@@ -23,5 +23,11 @@ class ProductBrandModel {
 
         return $brands;
     }
+
+    public function deleteBrand($brandID) {
+        $query = "DELETE FROM productBrand WHERE brandID = $brandID";
+        return mysqli_query($this->db, $query);
+    }
 }
 ?>
+
