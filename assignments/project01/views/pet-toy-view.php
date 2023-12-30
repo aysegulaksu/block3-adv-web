@@ -11,7 +11,7 @@ class PetToyView {
         // Display pet toys 
         echo "<h2>Pet Toys</h2>";
         
-        echo "<table class='pet-toy-table'>";
+        echo "<table class='pet-table'>";
         echo "<tr>
                 <th>Category</th>
                 <th>Brand</th>
@@ -36,8 +36,9 @@ class PetToyView {
     public function displayPetToyForm($categories, $brands, $sizes) {
         
         echo "
-            <div class='form-wrap'>
+          
             <h2>Add New Pet Toy</h2>
+            <div class='form-wrap'>
             <form class='form-2' method='post' action='pet-toy.php'>
             
                 <div class='form-group'>

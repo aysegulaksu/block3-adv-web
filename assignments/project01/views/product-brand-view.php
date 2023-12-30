@@ -1,14 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project-01</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <main >
     <?php
 
         class ProductBrandView {
@@ -33,17 +22,15 @@
             public function displayBrandForm() {
                 echo "
                     <h2>Add New Brand</h2>
-                    <form method='post' action='brand.php'>
-                        <label class='form-label' for='newBrand'>Brand:</label>
+                    <div class='form-wrap1'>
+                    <form class='form-1' method='post' action='brand.php'>
+                        <label class='form-label' for='newBrand'>Brand</label>
                         <input class='form-input' id='newBrand' type='text' name='newBrand' required>
                         <button type='submit'>Add Brand</button>
                     </form>
+                    </div>
                 ";
             }
         }
     ?>
     
-</main>
-
-</body>
-</html>
