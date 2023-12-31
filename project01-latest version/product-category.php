@@ -10,12 +10,17 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
+    <header>
         <nav>
             <ul>
                 <li>
                     <a href="./index.php">
                         Home
+                    </a>
+                </li>
+                <li>
+                    <a href="./product-type.php">
+                       Type
                     </a>
                 </li>
                 <li>
@@ -29,24 +34,14 @@
                     </a>
                 </li>
                 <li>
-                    <a href="./toy-size.php" >
-                        Toy Size
-                    </a>
-                </li>
-                <li>
-                    <a href="./pet-toy.php" >
-                        Pet Toy
-                    </a>
-                </li>
-                <li>
-                    <a href="./pet-food.php" >
-                        Pet Food
+                    <a href="./product.php">
+                        Product
                     </a>
                 </li>
             </ul>
         </nav>
     </header>
-
+<!-- end of header -->
     <main>
     <?php
 
@@ -67,15 +62,15 @@
                 $result = $controller->insertCategory($newCategory);
 
                 if (!$result) {
-                    echo "<p style='color: red;'>Category already exists. Please choose a different category.</p>";
+                    echo "<h3>Category already exists. Please choose a different category.</h3>";
                 }
             }
         }
 
-        // Display categories and  form
+        // Display categories and form
         $categories = $controller->getAllCategories();
         $view->displayCategories($categories);
-    ?>
+        ?>
 
     </main>
 </body>

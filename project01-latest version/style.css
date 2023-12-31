@@ -91,6 +91,10 @@ nav ul li:nth-child(7) {
   background-color:#D9043D;
 }
 
+nav ul li :last-child{
+  
+}
+
 
 
 nav ul li a {
@@ -152,14 +156,20 @@ main ul {
   }
 
 .form-wrap1 {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  border: #072732 2px solid;
+  background-color: #f9f7f7;
+  box-shadow: #1c1a1a 5px 5px 5px;
 }
+
+
 
 
   .form-1 .form-label {
     font-size: 20px;
     font-weight: 500;
+
   }
 
   input {
@@ -181,9 +191,6 @@ main ul {
   button:hover {
     background-color: #D9043D;
   }
-
-
-
 
 .form-2 label.form-label {
   font-size: 18px;
@@ -259,6 +266,13 @@ main ul {
   text-decoration: none;
   color: #D9043D;
   text-transform: capitalize;
+}
+
+.product-list {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
 }
 
 @media only screen and (max-width: 900px) {

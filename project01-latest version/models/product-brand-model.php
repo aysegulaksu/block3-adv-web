@@ -13,7 +13,7 @@ class ProductBrandModel {
     }
 
     public function getAllBrands() {
-        $query = "SELECT * FROM productBrand";
+        $query = "SELECT * FROM productBrand ORDER BY brand ASC";
         $result = mysqli_query($this->db, $query);
 
         $brands = [];
@@ -30,4 +30,5 @@ class ProductBrandModel {
     }
 }
 ?>
+
 

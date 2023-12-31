@@ -10,12 +10,17 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
+    <header>
         <nav>
             <ul>
                 <li>
                     <a href="./index.php">
                         Home
+                    </a>
+                </li>
+                <li>
+                    <a href="./product-type.php">
+                       Type
                     </a>
                 </li>
                 <li>
@@ -29,23 +34,14 @@
                     </a>
                 </li>
                 <li>
-                    <a href="./toy-size.php" >
-                        Toy Size
-                    </a>
-                </li>
-                <li>
-                    <a href="./pet-toy.php" >
-                        Pet Toy
-                    </a>
-                </li>
-                <li>
-                    <a href="./pet-food.php" >
-                        Pet Food
+                    <a href="./product.php">
+                        Product
                     </a>
                 </li>
             </ul>
         </nav>
     </header>
+<!-- end of header -->
 
     <main>
     <?php
@@ -59,18 +55,21 @@
         $controller = new ProductBrandController($model);
         $view = new ProductBrandView();
 
-        // Form submission
+       // Form submission
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $newBrand = isset($_POST['newBrand']) ? $_POST['newBrand'] : '';
 
-            if (!empty($newBrand)) {
-                $result = $controller->insertBrand($newBrand);
+        if (!empty($newBrand)) {
+            $result = $controller->insertBrand($newBrand);
 
-                if (!$result) {
-                    echo "<p style='color: red;'>Brand already exists.      Please choose a different brand.</p>";
-                }
+            if ($result === true) {
+                echo "<h4 class='success' >Brand added successfully!</h4>";
+            } elseif ($result === false) {
+                echo "<h3>Brand already exists. Please choose a different brand.</h3>";
             }
         }
+    }
+
 
         //  Delete action
         if (isset($_GET['action']) && $_GET['action'] === 'delete') {
@@ -80,9 +79,9 @@
                 $result = $controller->deleteBrand($brandID);
 
                 if ($result) {
-                    echo "Brand with ID $brandID deleted successfully.";
+                    echo "<h4 >Brand with ID $brandID deleted successfully.</h4>";
                 } else {
-                    echo "Failed to delete brand with ID $brandID.";
+                    echo "<h3>Failed to delete brand with ID $brandID.</h3>";
                 }
             }
         }

@@ -13,7 +13,7 @@ class ProductCategoryModel {
     }
 
     public function getAllCategories() {
-        $query = "SELECT * FROM productCategory";
+        $query = "SELECT * FROM productCategory ORDER BY `category` ASC";
         $result = mysqli_query($this->db, $query);
 
         $categories = [];

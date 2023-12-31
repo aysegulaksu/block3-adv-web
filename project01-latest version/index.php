@@ -10,12 +10,17 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
+<header class="home-nav">
         <nav>
             <ul>
                 <li>
                     <a href="./index.php">
                         Home
+                    </a>
+                </li>
+                <li>
+                    <a href="./product-type.php">
+                       Type
                     </a>
                 </li>
                 <li>
@@ -29,28 +34,14 @@
                     </a>
                 </li>
                 <li>
-                    <a href="./toy-size.php" >
-                        Toy Size
-                    </a>
-                </li>
-                <li>
-                    <a href="./pet-toy.php" >
-                        Pet Toy
-                    </a>
-                </li>
-                <li>
-                    <a href="./pet-food.php" >
-                        Pet Food
+                    <a href="./product.php">
+                        Product
                     </a>
                 </li>
             </ul>
         </nav>
     </header>
-
-   
-    <main>
-       
-    </main>
+    <!-- end of header -->
     
 </body>
 </html>
