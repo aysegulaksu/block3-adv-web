@@ -12,11 +12,7 @@ Note:
 
 
 
-
-
 2. Write a php class called Vehicle with a method called drive(). Create a subclass called Car that overrides the drive() method to print "Repairing a car".
-
-
 
 
 3. Write a php class called Shape with a method called getArea(). Create a subclass called Rectangle that overrides the getArea() method to calculate the area of a rectangle.

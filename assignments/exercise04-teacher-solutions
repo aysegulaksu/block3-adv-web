@@ -27,6 +27,7 @@ class Rectangle extends Shape {
     -width;
     __construct()
     getArea()
+    
 }
 
 class Employee {
