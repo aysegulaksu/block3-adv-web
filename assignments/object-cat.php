@@ -71,6 +71,6 @@ $catFoodPerDay = new CatFoodPerDay(45, 5);
 $catFoodPerDay->calculateMinimumFoodPerDay();
 
 // Display the result
-echo "<br>Finn Peek-A-Boo eats approximetly 45gr food in each meal. and he eats at least {$catFoodPerDay->mealsPerDay} times a day.So, he eats minimum {$catFoodPerDay->minimumFoodPerDay} grams of food each day, <br> <br> <br>";
+echo "<br>Finn Peek-A-Boo eats approximetly 45gr food in each meal. and he eats at least {$catFoodPerDay->mealsPerDay} times a day.So, he eats minimum {$catFoodPerDay->minimumFoodPerDay} grams of food each day, <br> <br>";
 
 ?>
