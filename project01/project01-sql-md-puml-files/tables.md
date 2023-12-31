@@ -1,5 +1,47 @@
+# GOING BACK TO THE ORIGINAL TABLE STRUCTURE 
 
-# UPDATED TABLES BASED ON THE FINAL TABLE STRUCTURE
+## Table: petFoodExpiration
+| expID | productID | expirationDate |
+|-------|-----------|-----------------|
+| int   | int       | date            |
+
+## Table: petProduct
+| productID | productName | typeID | categoryID | brandID |
+|-----------|-------------|--------|------------|---------|
+| int       | varchar     | int    | int        | int     |
+
+## Table: petToySize
+| sizeID | size      | productID |
+|--------|-----------|-----------|
+| int    | varchar   | int       |
+
+## Table: productBrand
+| brandID | brand   |
+|---------|---------|
+| int     | varchar |
+
+## Table: productCategory
+| categoryID | category   |
+|------------|------------|
+| int        | varchar    |
+
+## Table: productPrice
+| pricingID | productID | price |
+|-----------|-----------|-------|
+| int       | int       | float |
+
+## Table: productType
+| typeID | type    |
+|--------|---------|
+| int    | varchar |
+
+
+
+
+
+
+
+# ONE OF THE PREVIOUS TABLE STRUCTURE - 
 
 # Table: productBrand
 | brandID | brand                     |

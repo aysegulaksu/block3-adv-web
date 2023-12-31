@@ -5,6 +5,7 @@ Category --|> Product
 Brand --|> Product
 PetFoodExpiration --|> Product
 PetToySize --|> Product
+ProductPrice --|> Product
 
 abstract class Product {
   -productID
@@ -12,6 +13,7 @@ abstract class Product {
   -typeID
   -categoryID
   -brandID
+  -pricingID
 }
 
 class Type {
@@ -30,13 +32,19 @@ class Brand {
 }
 
 class PetFoodExpiration {
-  -expiration_id
+  -expirationID
+  -productID
   -expirationdate
 }
 
 class PetToySize {
-  -size_id
+  -sizeID
+  -prouductID
   -size
 }
 
-@enduml
+class ProductPrice {
+  -pricingID
+  -productID
+  -price
+}
