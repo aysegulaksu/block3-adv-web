@@ -15,6 +15,14 @@
 <header>
         <nav>
             <ul>
+                <li class="logo">
+                    <figure>
+                        <img src="https://cdn.pixabay.com/photo/2016/04/12/19/32/abstract-1325156_1280.png" alt="">
+                        <figcaption>
+                            <h1>PET PRODUCTS</h1>
+                        </figcaption>
+                    </figure>
+                </li>
                 <li>
                     <a href="./index.php">
                         Home
