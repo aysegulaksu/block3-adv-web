@@ -7,7 +7,7 @@ class Cat {
    private $playfullnessLevel = 0;
     private $happy = false;
 
-//use constructor - in the constructer setting playfullness level 0, the cat does not want to play. therefore happiness is false.. 
+//use constructor - in the constructer setting playfullness level 0, the cat does not want to play. therefore happiness is false.
 public function __construct() {
     $this->playfullnessLevel = 0;
     $this ->happy = false;

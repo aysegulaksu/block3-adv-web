@@ -38,7 +38,7 @@
     }
     // echo $backwards;
 
-    // compare the two new variables
+    // compare the two new variable
     if($forwards == $backwards) {
         // echo "palindrome!";
     }

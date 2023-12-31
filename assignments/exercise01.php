@@ -9,7 +9,7 @@ function isPalindrome($sentence) {
     // You need to clean the sentence.... Initilaize an empty string... store the sentence - cleaned sentence 
     $cleanedSentence = '';
 
-    // Use loop... from both ends, first from the begining, check it fromthe begining 
+    // Use loop..from both ends, first from the begining, check it fromthe begining 
     for ($i = 0; $i < $length; $i++) {
         // Get the character at the current position
         $char = $sentence[$i];
