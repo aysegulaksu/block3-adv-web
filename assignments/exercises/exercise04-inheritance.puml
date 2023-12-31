@@ -1,0 +1,146 @@
+
+@startuml
+scale 3
+
+class Animal {
+  +makeSound()
+}
+
+class Cat extends Animal {
+  +makeSound()
+}
+
+
+class Vehicle {
+  +drive()
+}
+
+class Car extends Vehicle {
+  +drive()
+  +repairCar()
+}
+
+class Shape {
+    +getArea()
+}
+
+class Shape extends Rectangle
+
+class Rectangle {
+    +getArea()
+}
+
+
+
+class Employee {
+    +work()
+    +getSalary()
+}
+
+class Employee extends HRManager
+
+class HRManager {
+    +work()
+    +addEmployee()
+}
+
+
+class BankAccount {
+    +deposit()
+    +withdraw()
+}
+
+class BankAccount extends SavingsAccount 
+
+class SavingsAccount {
+    +withdraw() 
+}
+
+
+
+class AnimalMove {
+    +move()
+}
+
+class AnimalMove extends Cheetah
+
+class Cheetah {
+    +move()
+}
+
+
+
+class Person {
+    +getFirstName()
+    +getLastName()
+}
+
+class Person extends EmployeeInfo
+class EmployeeInfo {
+    +getLastName()
+    +getEmployeeId()
+}
+
+
+
+class ShapePerimeterArea {
+    +getPerimeter()
+    +getArea()
+}
+
+class ShapePerimeterArea extends Circle
+class Circle {
+    +getPerimeter()
+    +getArea()
+}
+
+
+
+class VehicleHierarchy {
+    +make
+    +model
+    +year
+    +fuelType
+    +calculateFuelEfficiency()
+    +calculateDistanceTraveled()
+    +calculateMaxSpeed()
+}
+
+class VehicleHierarchy extends Truck
+class Truck {
+}
+
+class VehicleHierarchy extends CarType
+class CarType {
+}
+
+class VehicleHierarchy extends MotorcycleType
+class MotorcycleType {
+}
+
+
+
+class EmployeeHierarchy {
+    +name
+    +address
+    +salary
+    +jobTitle
+    +calculateBonuses()
+    +generatePerformanceReports()
+    +manageProjects()
+}
+class EmployeeHierarchy extends ManagerType
+
+class ManagerType {
+}
+
+class EmployeeHierarchy extends DeveloperType
+class DeveloperType {
+}
+
+class EmployeeHierarchy extends ProgrammerType
+class ProgrammerType {
+}
+
+
+@enduml

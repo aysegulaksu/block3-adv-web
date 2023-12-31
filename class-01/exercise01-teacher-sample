@@ -2,7 +2,7 @@
 
 $phasesToTest = "ad a";
 
-//have 2 variables to keep track pf phases forward 
+//have 2 variables to keep track pf phases forwar
 
 $forwards = "";
 $backwards = "";
@@ -22,6 +22,7 @@ for ( $i = 0; $i < strlen ($phaseToTest); $i++) {
         $forwards .=$phaseToTest [$i];
     }
 }
+
 echo $forwards;
 
 
